@@ -274,7 +274,7 @@ Without `UseRealTime`, CPU time is used by default.
 ## Manual timing
 For benchmarking something for which neither CPU time nor real-time are
 correct or accurate enough, completely manual timing is supported using
-the `UseManualTime` function. 
+the `UseManualTime` function.
 
 When `UseManualTime` is used, the benchmarked code must call
 `SetIterationTime` once per iteration of the `KeepRunning` loop to
@@ -384,7 +384,7 @@ the minimum time, or the wallclock time is 5x minimum time. The minimum time is
 set as a flag `--benchmark_min_time` or per benchmark by calling `MinTime` on
 the registered benchmark object.
 
-## Reporting the mean and standard devation by repeated benchmarks
+## Reporting the mean and standard deviation by repeated benchmarks
 By default each benchmark is run once and that single result is reported.
 However benchmarks are often noisy and a single result may not be representative
 of the overall behavior. For this reason it's possible to repeatedly rerun the
@@ -614,7 +614,7 @@ The library supports multiple output formats. Use the
 is the default format.
 
 The Console format is intended to be a human readable format. By default
-the format generates color output. Context is output on stderr and the 
+the format generates color output. Context is output on stderr and the
 tabular data on stdout. Example tabular output looks like:
 ```
 Benchmark                               Time(ns)    CPU(ns) Iterations
@@ -689,7 +689,7 @@ By default, benchmark builds as a debug library. You will see a warning in the o
 cmake -DCMAKE_BUILD_TYPE=Release
 ```
 
-To enable link-time optimisation, use
+To enable link-time optimization, use
 
 ```
 cmake -DCMAKE_BUILD_TYPE=Release -DBENCHMARK_ENABLE_LTO=true
@@ -723,4 +723,3 @@ required to build the library.
 
 * Users must manually link `shlwapi.lib`. Failure to do so may result
 in unresolved symbols.
-
