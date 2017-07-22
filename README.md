@@ -309,7 +309,7 @@ static void BM_ManualTiming(benchmark::State& state) {
 BENCHMARK(BM_ManualTiming)->Range(1, 1<<17)->UseManualTime();
 ```
 
-### Preventing optimisation
+### Preventing optimization
 To prevent a value or expression from being optimized away by the compiler
 the `benchmark::DoNotOptimize(...)` and `benchmark::ClobberMemory()`
 functions can be used.
